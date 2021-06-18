@@ -28,6 +28,10 @@
                 return "5737b00000000ki";
             else if (prechatFormData[4].value=="Dentrix")
                 return "5737b00000000kF";
+            else if (prechatFormData[4].value=="Patient Engage")
+                return "5737b000000Gmcy";
+            else if (prechatFormData[4].value=="eServices")
+                return "5737b000000Gmd3";
             else if (prechatFormData[4].value=="Dentrix Enterprise")
                 return "5737b00000000kG";
             else if (prechatFormData[4].value=="Specialty")
