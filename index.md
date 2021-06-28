@@ -20,7 +20,7 @@
         embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
             // Dynamically changes the button ID based on what the visitor enters in the pre-chat form.
             // Returns a valid button ID.    
-            if (prechatFormData[5].value=="Billing")
+            if (prechatFormData[5].value=="Your HSOne Invoice")
                 return "5734v0000008kQV";
             else if (prechatFormData[4].value=="Dentrix")
                 return "5734v0000008kQa";
