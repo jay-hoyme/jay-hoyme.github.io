@@ -13,7 +13,7 @@
         embedded_svc.settings.displayHelpButton = true; //Or false
         embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
         //embedded_svc.settings.defaultMinimizedText = '...'; //(Defaults to Chat with an Expert)
-        //embedded_svc.settings.disabledMinimizedText = '...'; //(Defaults to Agent Offline)
+        embedded_svc.settings.disabledMinimizedText = 'No Agents Available'; //(Defaults to Agent Offline)
         //embedded_svc.settings.loadingText = ''; //(Defaults to Loading)
         //embedded_svc.settings.storageDomain = 'yourdomain.com'; //(Sets the domain for your deployment so that visitors can navigate subdomains during a chat session)
         // Settings for Chat
@@ -54,10 +54,10 @@
             {
                 baseLiveAgentContentURL: 'https://c.la2-c2-ia5.salesforceliveagent.com/content',
                 deploymentId: '5723t000000TtGm',
-                buttonId: '5733t000000Ttw6',
+                buttonId: '5734v0000008kQa',
                 baseLiveAgentURL: 'https://d.la2-c2-ia5.salesforceliveagent.com/chat',
                 eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I4v000000fxTnEAI_17a1aca0e3c',
-                isOfflineSupportEnabled: true
+                isOfflineSupportEnabled: false
             }
         );
     };
