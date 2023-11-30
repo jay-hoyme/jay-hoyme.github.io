@@ -18,7 +18,6 @@
         embedded_svc.settings.entryFeature = 'LiveAgent';
 
         // Add direct-to-button routing based on pre-chat form responses
-		/*
         embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
             // Iterate through pre-chat form data to find the 'What_can_we_assist_with__c' field
 			console.log('In logic section');
@@ -35,7 +34,6 @@
             return null;
 			console.log('in logic section');
         };
-		*/
 
         // Other Embedded Service settings ...
         
