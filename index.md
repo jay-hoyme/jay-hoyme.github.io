@@ -61,7 +61,7 @@
                     console.log("Selected Option Label: " + selectedOption.text);
                     console.log("Selected Option Value: " + selectedOption.value);
 
-                    if (['Agency ID/Member ID', 'CDE Hours', 'Certification/Recertification'].includes(selectedOption.value)) {
+                    if (['Agency ID/Member ID', 'CDE hours', 'Certification/Recertification'].includes(selectedOption.value)) {
                         console.log('Rerouting chat!');
                         rerouteChat();
                     }
