@@ -17,6 +17,7 @@
         // Add direct-to-button routing based on pre-chat form responses
         embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
             // Iterate through pre-chat form data to find the 'What_can_we_assist_with__c' field
+			console.log('In logic section');
             for (var i = 0; i < prechatFormData.length; i++) {
                 if (prechatFormData[i].label === 'What_can_we_assist_with__c') {
                     var selectedOption = prechatFormData[i].value;
