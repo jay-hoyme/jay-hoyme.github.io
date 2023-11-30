@@ -24,6 +24,7 @@
 			console.log('In logic section');
             console.log(prechatFormData[7].value);
             if (prechatFormData[7].value === 'Agency ID/Member ID' || prechatFormData[7].value === 'CDE hours' || prechatFormData[7].value === 'Certification/Recertification') {
+                console.log('Routing to new queue');
                 return '573E2000000EOFN';
             }
         };
