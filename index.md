@@ -29,7 +29,7 @@
             }
         };
 
-        // Other Embedded Service settings ...
+        embedded_svc.settings.extraPrechatFormDetails = [{"label":"What can we assist with?", "transcriptFields": ["Request_Reason__c"]}];
         
         embedded_svc.init(
 			'https://prioritypdc--uat.sandbox.my.salesforce.com',
