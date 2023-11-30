@@ -23,18 +23,11 @@
             // Iterate through pre-chat form data to find the 'What_can_we_assist_with__c' field
 			console.log('In logic section');
             console.log(prechatFormData[7].value);
-            for (var i = 0; i < prechatFormData.length; i++) {
-                if (prechatFormData[i].label === 'What_can_we_assist_with__c') {
-                    var selectedOption = prechatFormData[i].value;
-                    if (['Agency ID/Member ID', 'CDE hours', 'Certification/Recertification'].includes(selectedOption)) {
-                        // Replace 'NEW_BUTTON_ID_FROM_SALESFORCE_SETUP' with the actual button ID you want to route to
-                        return '573E2000000EOFN';
-                    }
-                }
+            if (prechatFormData[7].value === 'Agency ID/Member ID' || prechatFormData[7].value === 'CDE hours' || prechatFormData[7].value === 'Certification/Recertification') {
+                return '573E2000000EOFN';
+            } else {
+                return '5734N000000GzEV';
             }
-            // If none of the specified options were selected, return null to use the default button
-            return null;
-			console.log('in logic section');
         };
 
         // Other Embedded Service settings ...
