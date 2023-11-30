@@ -20,16 +20,21 @@
         embedded_svc.settings.entryFeature = 'LiveAgent';
 
         embedded_svc.init(
-            'https://prioritypdc--uat.sandbox.my.salesforce.com',
-            'https://prioritypdc--uat.sandbox.my.salesforce-sites.com/digengage',
-            gslbBaseURL,
-            '00DE20000015Pmn',
-            'Course_Coordination',
-            {
-                // Salesforce Live Agent and Embedded Service configuration ...
-            }
-        );
-    };
+			'https://prioritypdc--uat.sandbox.my.salesforce.com',
+			'https://prioritypdc--uat.sandbox.my.salesforce-sites.com/digengage',
+			gslbBaseURL,
+			'00DE20000015Pmn',
+			'Course_Coordination',
+			{
+				baseLiveAgentContentURL: 'https://c.la2s-core1.sfdc-lywfpd.salesforceliveagent.com/content',
+				deploymentId: '5724N000000GyED',
+				buttonId: '5734N000000GzEV',
+				baseLiveAgentURL: 'https://d.la2s-core1.sfdc-lywfpd.salesforceliveagent.com/chat',
+				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I4N000000KynhUAC_17ec0e19017',
+				isOfflineSupportEnabled: true
+			}
+		);
+	};
 
     if (!window.embedded_svc) {
         var s = document.createElement('script');
