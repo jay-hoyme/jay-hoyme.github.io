@@ -15,7 +15,8 @@
         embedded_svc.settings.language = ''; // For example, enter 'en' or 'en-US'
 
         // Add direct-to-button routing based on pre-chat form responses
-        embedded_svc.settings.directToButtonRouting = function(prechatFormData) {/*
+		/*
+        embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
             // Iterate through pre-chat form data to find the 'What_can_we_assist_with__c' field
 			console.log('In logic section');
             for (var i = 0; i < prechatFormData.length; i++) {
@@ -28,9 +29,10 @@
                 }
             }
             // If none of the specified options were selected, return null to use the default button
-            return null;*/
+            return null;
 			console.log('in logic section');
         };
+		*/
 
         // Other Embedded Service settings ...
         
