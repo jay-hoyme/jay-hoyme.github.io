@@ -14,6 +14,9 @@
         embedded_svc.settings.displayHelpButton = true; // Or false
         embedded_svc.settings.language = ''; // For example, enter 'en' or 'en-US'
 
+	embedded_svc.settings.enabledFeatures = ['LiveAgent'];
+        embedded_svc.settings.entryFeature = 'LiveAgent';
+
         // Add direct-to-button routing based on pre-chat form responses
 		/*
         embedded_svc.settings.directToButtonRouting = function(prechatFormData) {
