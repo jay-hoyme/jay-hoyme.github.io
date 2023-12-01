@@ -43,7 +43,7 @@
 				buttonId: '5734N000000GzEV',
 				baseLiveAgentURL: 'https://d.la2s-core1.sfdc-lywfpd.salesforceliveagent.com/chat',
 				eswLiveAgentDevName: 'EmbeddedServiceLiveAgent_Parent04I4N000000KynhUAC_17ec0e19017',
-				isOfflineSupportEnabled: true
+				isOfflineSupportEnabled: false
 			}
 		);
 	};
@@ -59,3 +59,5 @@
         initESW('https://service.force.com');
     }
 </script>
+
+
